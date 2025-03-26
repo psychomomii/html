@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Supervisor | Not Just Coffee </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Common.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="Index.html">
+                <img src="logo.png" alt="Cafe Logo" id="logo"  >
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="all.html">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="all.html">All</a>
+                        <hr>
+                        <a href="beverages.html">Beverages</a>
+                        <hr>
+                        <a href="food.html">Food</a>
+                    </div>
+                </li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact us.html">Contact Us</a></li>
+            </ul>
+            <div class="header-social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Shift Supervisor Job Requirement</h1>
+        <section class="job-description">
+            <h2>Shift Supervisor</h2>
+            <p><strong>Purpose:</strong></p>
+            <p>Café Manager is responsible for the successful daily operations of the café. He/she hires, trains, manages, supports shift supervisors, and Baristas to ensure that the team provides consistent products, a clean working environment, and the highest level of guest experience.</p>
+            <p><strong>Key Duties & Responsibilities:</strong></p>
+            <ul>
+                <li>Demonstrating passion and confidence for the Second Cup Brand</li>
+                <li>Honour guests by providing quick, friendly, and genuine service</li>
+                <li>Generates guest satisfaction; responds appropriately to guest concerns</li>
+                <li>Manages and motivates shift supervisors and baristas</li>
+                <li>Develops and implements café policies and procedures</li>
+                <li>Ensures that shift supervisors and Baristas are adhering to all Second Cup Standards</li>
+                <li>Responsible for hiring, firing, training, and conducting performance reviews</li>
+                <li>Assist Operations Manager with placing orders of supplies required for the café</li>
+            </ul>
+            <p><strong>Required Knowledge, Skills, and Abilities:</strong></p>
+            <ul>
+                <li>Highly motivated</li>
+                <li>Handle multiple tasks at one time</li>
+                <li>Maintain a positive morale and professional attitude at all times</li>
+                <li>Excellent management and leadership skills</li>
+                <li>Have an understanding of food and beverage operations</li>
+                <li>Must be flexible and able to work days, evenings, and weekends when called upon</li>
+                <li>Detailed oriented; strong time management, prioritization, and organizational skills</li>
+                <li>Strong written and verbal communication skills</li>
+                <li>Communicates with coworkers & management to solve issues and improve quality & service</li>
+                <li>Ensures all baristas and shift supervisors are following cash handling procedures</li>
+            </ul>
+            <p><strong>Extra Benefits:</strong></p>
+            <ul>
+                <li>Salary + Daily Tip</li>
+                <li>International Certifications</li>
+                <li>Health Insurance</li>
+                <li>Paid Leaves</li>
+            </ul>
+            <p><strong>Skills:</strong></p>
+            <p>Team Management, Customer Relation Management, Team Motivation</p>
+            <p><strong>Job Category:</strong> Management</p>
+            <p><strong>Job Type:</strong> Part Time</p>
+            <p><strong>Job Location:</strong> Karachi</p>
+        </section>
+        <section class="apply-form">
+            <h2>Apply for this Position</h2>
+            <form id="applyForm" onsubmit="handleSubmit(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="resume">Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+                <button type="submit">Submit</button>
+                <p id="formMessage" style="display:none;">Your form has been submitted.</p>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2024 Not Just Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const formMessage = document.getElementById('formMessage');
+            formMessage.style.display = 'block';
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+                document.getElementById('applyForm').reset();
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

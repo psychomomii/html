@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US | Not Just Coffee </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="Index.html">
+                <img src="logo.png" alt="Cafe Logo" id="logo"  >
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="all.html">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="all.html">All</a>
+                        <hr>
+                        <a href="beverages.html">Beverages</a>
+                        <hr>
+                        <a href="food.html">Food</a>
+                    </div>
+                </li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact us.html">Contact Us</a></li>
+            </ul>
+            <div class="header-social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Please reach out with any questions, comments, or feedback.</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Our Information</h2>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker"></i></div>
+                        <div class="text">
+                            <p>123 Shadman Road, <br>Block 2,<br> Lahore, Punjab 54000 Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <div class="text">
+                            <p>0321-0000000</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <div class="text">
+                            <p>notjustcoffee@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form action="#responseMessage" method="post" novalidate>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Full Name">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required placeholder="Type your message" rows="5"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <p id="responseMessage" class="hidden">Your response has been sent!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2024 Not Just Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); 
+            document.getElementById('responseMessage').classList.remove('hidden');
+            form.reset(); 
+            setTimeout(() => {
+                document.getElementById('responseMessage').classList.add('hidden');
+            }, 2000); // 
+        });
+    </script>
+</body>
+</html>
